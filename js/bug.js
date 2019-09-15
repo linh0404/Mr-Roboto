@@ -14,11 +14,12 @@ function turnRight() {
             direction = "West";
         } else if (direction = "West") {
             direction = "North";
-        } else {
+        } 
+    } else {
             console.log("An error occurred");
         }
     }
-}
+
 
 //function to turn Mr. Bug left
 function turnLeft() {
@@ -31,13 +32,31 @@ function turnLeft() {
             direction = "East";
         } else if (direction = "East") {
             direction = "North";
-        } else {
-            console.log("An error occurred");
-        }
+        } 
+    } else {
+        console.log("An error occurred");
     }
 }
 
-//function to move Mr. Bug forward
+//function to move Mr. Bug forward (assuming Mr. Bug starts on (0,0))
 function move() {
-
+    if (direction()) {
+        if (direction == "North") {
+            if (yPos < 2 && yPos > -2) {
+                yPos += 1;
+            }
+        } else if (direction == "South") {
+            if (yPos < 2 && yPos > -2) {
+                yPos -= 1;
+            }
+        } else if (direction == "East") {
+            if (xPos < 2 && xPos > -2) {
+                xPos += 1;
+            }
+        } else if (direction == "West") {
+            if (xPos < 2 && xPos > -2) {
+                xPos -= 1;
+            }
+        }
+    }
 }

@@ -30,6 +30,6 @@
     margin: 100 0 100 0;
 }
 
-.icon-bug:before {
-    content: "\e999";
+#bug {
+    z-index: 999;
   }
