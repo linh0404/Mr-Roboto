@@ -14,13 +14,13 @@
     <body>
         <div id="container">
             <div id="board">
-                <div><i class="fas fa-bug"></i></div>
+                <div><i class="fas fa-bug" id="bug"></i></div>
             </div>
         </div>
         <div class="controls">
-            <button type="button" class="btn btn-dark">Turn 90&deg;</button>
-            <button type="button" class="btn btn-dark">Turn -90&deg;</button>
-            <button type="button" class="btn btn-success">Forward</button>
+            <button type="button" class="btn btn-dark" onclick="turnRight()">Turn 90&deg;</button>
+            <button type="button" class="btn btn-dark" onclick="turnLeft()">Turn -90&deg;</button>
+            <button type="button" class="btn btn-success" onclick="move()">Forward</button>
         </div>
         <script src="js/bug.js"></script>
     </body>

@@ -38,7 +38,7 @@ function turnLeft() {
     }
 }
 
-//function to move Mr. Bug forward (assuming Mr. Bug starts on (0,0))
+//function to move Mr. Bug forward (assuming Mr. Bug starts on (0,0)i)
 function move() {
     if (direction()) {
         if (direction == "North") {
@@ -57,6 +57,8 @@ function move() {
             if (xPos < 2 && xPos > -2) {
                 xPos -= 1;
             }
+        } else {
+            console.log("You're going to move off the edge! Change direction")
         }
     }
 }
