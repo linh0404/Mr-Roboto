@@ -1,3 +1,9 @@
+function placeBug() {
+    let x = document.getElementById("x");
+    let y = document.getElementById("y");
+    let d = document.getElementById("d");
+}
+
 //determine the direction Mr. Bug is facing
 function direction() {
     let dir = ["North", "East", "South", "West"];
